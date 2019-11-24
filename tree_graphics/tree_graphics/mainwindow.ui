@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="CustomPane" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="add_node">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#add_node {
+	 border-radius: 3px;
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+QPushButton#add_node:hover {
+	background-color: #008CBA;
+	color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#delete_2 {
+	 border-radius: 3px;
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+QPushButton#delete_2:hover {
+	background-color: #008CBA;
+	color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="key_input">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit#key_input {
+	border: 2px solid gray;
+	border-radius: 4px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="show">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#show {
+	 border-radius: 3px;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+QPushButton#show:hover {
+	background-color: #4CAF50;
+	color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Show</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(52, 101, 164)</string>
+   </property>
+   <widget class="QMenu" name="menuAVL_Tree">
+    <property name="title">
+     <string>AVL Tree</string>
+    </property>
+   </widget>
+   <addaction name="menuAVL_Tree"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomPane</class>
+   <extends>QWidget</extends>
+   <header>custompane.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
